@@ -1,0 +1,116 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIENCE BOOST - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1E90FF, #87CEEB, #8A2BE2);
+            color: white;
+            text-align: center;
+        }/* Top Navigation Bar */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 14px;
+        transition: 0.3s;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .navbar a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+
+    /* Main Content */
+    .content {
+        margin-top: 80px; /* Adjusted to avoid overlap with navbar */
+        padding: 20px;
+    }
+
+    /* Auto-Scrolling Dashboard */
+    .slideshow-container {
+        position: relative;
+        max-width: 80%;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .slide {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* JavaScript Controls for Slideshow */
+    @keyframes fade {
+        from { opacity: 0.4; }
+        to { opacity: 1; }
+    }
+</style>
+
+</head>
+<body><!-- Navigation Bar -->
+<div class="navbar">
+    <a href="content://0@media/external/file/1000020276">Log in as a Member</a>
+    <a href="content://0@media/external/file/1000020185">Apply for New Membership</a>
+    <a href="content://0@media/external/file/1000020184">About Us</a>
+    <a href="content://0@media/external/file/1000020181">Feedback</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <h1>Welcome to SCIENCE BOOST</h1>
+    <p>SCIENCE BOOST is a learning platform for children to explore science through projects, experiments, and innovative ideas.</p>
+    
+    <!-- Auto-Scrolling Image Dashboard -->
+    <div class="slideshow-container">
+        <img class="slide" src="https://i.ibb.co/35JmbV5z/file-Kyc7x7-Vtie-Xfq-Wyur1mw1j.webp" alt="file-Kyc7x7-Vtie-Xfq-Wyur1mw1j" border="0">
+        <img class="slide" src="https://i.ibb.co/pBXd8Kb9/file-BVhsr-Azw9-Mu-TAoti-Ew3-UWi.webp">
+        <img class="slide" src="https://i.ibb.co/7Jm65C7k/file-4-Qvx2-G4qp-Rq4-Ns-ULUMxdfv.webp">
+        <img class="slide" src="https://i.ibb.co/vvdhKc9Q/file-Fiyef9-Wtozy-D7-BS17i-Shwp.webp">
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].style.animation = "fade 1.5s";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    showSlides();
+</script>
+
+</body>
+</html>

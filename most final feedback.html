@@ -1,0 +1,84 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Science Boost</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #1E90FF, #87CEEB);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 450px;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #1E90FF;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #1E90FF;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #0057B8;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+    <script>
+        function openFeedbackForm() {
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSf-v4tv29qXtR1Zxy8MkwmEP4vG-8lAWe4gkuRRvb5wBM4Luw/viewform?usp=header"; // Replace with your actual Google Form link
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>We Value Your Feedback! 💬</h2>
+        <p>Tell us what you think about Science Boost. Your feedback helps us improve!</p>
+        <button class="btn" onclick="openFeedbackForm()">Give Feedback</button>
+    </div>
+
+</body>
+</html>
